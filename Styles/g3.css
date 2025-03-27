@@ -227,13 +227,27 @@ footer{
  margin-bottom: 0;
 }
 
+#experience-badge{
+  padding: 45px 42px;
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-left: -92px;
+  margin-top: -120px;
+
+}
+#experience-year{
+  font-size: 4rem;
+  font-weight: 700;
+}
+
 /*Responsive Media Query*/
 
 @media screen and (max-width: 576px) {
 
   .navbar,
   .nav-link,
-  .feature {
+  .feature,
+  .love-feature {
     flex-direction: column;
   }
 
@@ -241,7 +255,8 @@ footer{
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .feature-img img {
+  .feature-img img,
+  .love-feature img {
     width: 100%;
   }
 
@@ -251,6 +266,11 @@ footer{
 
   .banner-img {
     width: 100%;
+  }
+
+  #experience-badge{
+    margin-top: 20px;
+    margin-left: 10px;
   }
 
   .fact-container{
@@ -269,6 +289,8 @@ footer{
 }
 
 footer{
-  width: 100%;
+  margin: 20px auto;
+  height: 50px;
+  padding-top: 0;
 }
 }
